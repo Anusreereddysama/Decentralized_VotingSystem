@@ -13,18 +13,18 @@ yarn-error.log*
 build/
 dist/
 
+# Only ignore Truffle compiled contract artifacts (not config)
+build/contracts/*.json
+
 # MacOS system files
 .DS_Store
 
 # VS Code settings
 .vscode/
 
-# Optional: lockfiles
-package-lock.json
-yarn.lock
-
-# Truffle build artifacts (only artifacts, not config)
-build/contracts/*.json
-
-# Ignore test coverage reports
+# Test coverage reports
 coverage/
+
+# Optional lockfiles (if you don't want them in repo)
+# package-lock.json
+# yarn.lock
