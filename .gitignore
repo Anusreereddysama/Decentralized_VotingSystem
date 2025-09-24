@@ -19,9 +19,12 @@ dist/
 # VS Code settings
 .vscode/
 
-# Optional: lockfiles if you don’t want to track them
+# Optional: lockfiles
 package-lock.json
 yarn.lock
 
-# Truffle build artifacts
-*.json
+# Truffle build artifacts (only artifacts, not config)
+build/contracts/*.json
+
+# Ignore test coverage reports
+coverage/
